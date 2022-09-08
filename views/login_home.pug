@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    p hi!
+    .form-container
+        form(action=routes.logout, method ="post")
+            input(type="submit", value="logout")

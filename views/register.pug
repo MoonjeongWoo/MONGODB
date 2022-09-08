@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .form-container
+        form(action=routes.register, method ="post")
+            input(type="name", name="userName", placeholder="userName",required=true)
+            input(type="password", name="password", placeholder="password",required=true)
+            input(type="string", name="email", placeholder="email",required=true)
+            input(type="submit", value="register")
